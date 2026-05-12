@@ -1,0 +1,140 @@
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="#">Owlevate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Hero -->
+      <section id="hero">
+         <div>
+            <h1 data-anim>Hi, I'm Ahmad H.</h1>
+            <p data-anim>Frontend Developer & Designer | Ultimate Portfolio</p>
+            <a href="#portfolio" class="btn btn-primary btn-lg" data-anim>See My Work</a>
+            <div id="hero-lottie" style="width:150px;margin:30px auto;"></div>
+         </div>
+      </section>
+      <!-- About -->
+      <section id="about">
+         <div class="container">
+            <h2 class="section-title" data-anim>About Me</h2>
+            <div class="row align-items-center">
+               <div class="col-md-6" data-anim>
+                  <p>I create modern, interactive, and highly dynamic web experiences using HTML, CSS, JS, GSAP, Chart.js, and Bootstrap.</p>
+               </div>
+               <div class="col-md-6" data-anim>
+                  <div class="glass-card">
+                     <h4>Experience</h4>
+                     <ul>
+                        <li>3+ years in frontend development</li>
+                        <li>Advanced UI/UX & Animations</li>
+                        <li>Interactive Data Visualization</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Portfolio -->
+      <section id="portfolio" class="bg-dark">
+         <div class="container">
+            <h2 class="section-title" data-anim>Portfolio</h2>
+            <div class="filter-btns">
+               <button class="active" data-filter="all">All</button>
+               <button data-filter="web">Web</button>
+               <button data-filter="design">Design</button>
+               <button data-filter="app">App</button>
+            </div>
+            <div class="portfolio-grid" data-anim>
+               <div class="glass-card" data-category="web" data-title="Portfolio Website" data-desc="A modern personal portfolio website." data-link="https://example.com/portfolio">
+                  <img src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_1280.jpg" alt="Portfolio Website" class="w-100 lightbox-trigger">
+                  <h5 class="mt-2 text-center lightbox-trigger">Portfolio Website</h5>
+               </div>
+               <div class="glass-card" data-category="design" data-title="Graphic Design" data-desc="Creative graphic design for brand identity." data-link="https://example.com/graphic">
+                  <img src="https://cdn.pixabay.com/photo/2015/11/09/14/43/laptop-1035345_1280.jpg" alt="Graphic Design" class="w-100 lightbox-trigger">
+                  <h5 class="mt-2 text-center lightbox-trigger">Graphic Design</h5>
+               </div>
+               <div class="glass-card" data-category="app" data-title="Mobile App Interface" data-desc="Design of an interactive mobile application interface." data-link="https://example.com/mobileapp">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/29/12/30/phone-1869510_1280.jpg" alt="Mobile App Interface" class="w-100 lightbox-trigger">
+                  <h5 class="mt-2 text-center lightbox-trigger">Mobile App Interface</h5>
+               </div>
+               <div class="glass-card" data-category="design" data-title="Branding Concept" data-desc="Branding concept design for corporate identity." data-link="https://example.com/branding">
+                  <img src="https://images.pexels.com/photos/3182792/pexels-photo-3182792.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Branding Concept" class="w-100 lightbox-trigger">
+                  <h5 class="mt-2 text-center lightbox-trigger">Branding Concept</h5>
+               </div>
+               <div class="glass-card" data-category="web" data-title="Landing Page Design" data-desc="A smooth and modern landing page concept." data-link="https://example.com/landingpage">
+                  <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Landing Page Design" class="w-100 lightbox-trigger">
+                  <h5 class="mt-2 text-center lightbox-trigger">Landing Page Design</h5>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Skills -->
+      <section id="skills">
+         <div class="container">
+            <h2 class="section-title" data-anim>Skills</h2>
+            <div class="row text-center">
+               <div class="col-md-4 mb-4" data-anim>
+                  <canvas id="skill1" class="skill-chart"></canvas>
+                  <h5 class="mt-2">HTML & CSS</h5>
+               </div>
+               <div class="col-md-4 mb-4" data-anim>
+                  <canvas id="skill2" class="skill-chart"></canvas>
+                  <h5 class="mt-2">JavaScript</h5>
+               </div>
+               <div class="col-md-4 mb-4" data-anim>
+                  <canvas id="skill3" class="skill-chart"></canvas>
+                  <h5 class="mt-2">GSAP Animations</h5>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="bg-dark">
+         <div class="container">
+            <h2 class="section-title" data-anim>Contact Me</h2>
+            <div class="row justify-content-center">
+               <div class="col-md-6" data-anim>
+                  <form id="contactForm">
+                     <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Name" required>
+                     </div>
+                     <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                     </div>
+                     <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                     </div>
+                     <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+         &copy; 2026 Owlevate. All rights reserved.
+      </footer>
+      <!-- Lightbox -->
+      <div id="lightbox">
+         <span class="close-btn">&times;</span>
+         <span class="nav-btn nav-prev">&#10094;</span>
+         <span class="nav-btn nav-next">&#10095;</span>
+         <img src="" alt="Project Preview">
+         <div class="project-info">
+            <h3></h3>
+            <p></p>
+            <a href="" target="_blank">Visit Project</a>
+         </div>
+      </div>
